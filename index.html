@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive DRFT variable typeface specimen">
+  <title>DRFT</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="playground" class="playground">
+    <section class="specimen" aria-label="Editable animated type specimen">
+      <div id="word" class="word" contenteditable="true" spellcheck="false" aria-label="Type your own text">DRFT</div>
+    </section>
+
+    <footer class="controls">
+      <div class="axis-control">
+        <label for="drift">DRFT</label>
+        <input id="drift" type="range" min="0" max="100" value="50" aria-valuetext="50 percent">
+        <output id="drift-value" for="drift">050</output>
+      </div>
+
+      <div class="colour-control" aria-label="Colourway">
+        <span>Colour</span>
+        <div id="swatches" class="swatches"></div>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
